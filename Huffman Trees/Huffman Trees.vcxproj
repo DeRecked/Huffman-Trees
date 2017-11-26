@@ -76,6 +76,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,6 +114,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Heap.cpp" />
+    <ClCompile Include="HNode.cpp" />
+    <ClCompile Include="Huffman.cpp" />
+    <ClCompile Include="test_huffman.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Heap.hpp" />
+    <ClInclude Include="HNode.hpp" />
+    <ClInclude Include="Huffman.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
